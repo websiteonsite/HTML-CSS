@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
+import ProductContainer from "./components/Product/ProductContainer";
+//import GridMUI from "./playground/GridMUI";
+import DesktopCategories from "./components/Product/DesktopCategories";
+import MobileCategories from "./components/Product/MobileCategories";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    < >
+      <Navbar/>
+      <Header /> 
+      <ProductContainer />
+      {/* <GridMUI /> */}
+      <DesktopCategories />
+      <MobileCategories />
+    </>
   );
 }
 
